@@ -1,9 +1,9 @@
 
 
 function phAnalyzer(ph) {
-if (ph <= 6) {
+if (ph <= 6 && ph > 1) {
   console.log("This is acidic");
-} else if(ph <=10 ) {
+} else if(ph === 7 ) {
   console.log("This is neutral");
 } else if(ph <= 14){
   console.log("This is alkaline");
