@@ -11,9 +11,13 @@
 
 
     function decimalPlaceCounter(stringNumber){
-        return stringNumber;
+      var numAfterDecimal = stringNumber.split('.');
+      if(numAfterDecimal[1]) {
+        return numAfterDecimal[1].length;
     }
-    console.log(decimalPlaceCounter("333.333").split('.')[1].length);
+        return 0;
+    }
+    console.log(decimalPlaceCounter("333.333"));
 
   </script>
 </body>
