@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ <script>
+
+
+   function removeNullValues(array) {
+    var emptyArray =[]
+
+    for(var i=0; i<array.length; i++) {
+      if(array[i] !== null) {
+          emptyArray.push(array[i]);
+      }
+    }
+    return emptyArray;
+   }
+
+
+  var array1 = [3, 5, null, null, 87, "hello", "goodbye"];
+  var array2 = [true, null, false, {}, null, 43, "node"];
+  var array2 = [null, null, null, 7, null, "eight"]
+
+
+
+ </script>
+</body>
+</html>
