@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zip-code-validator</title>
+</head>
+<body>
+
+
+
+  <script>
+
+
+function zipCodeValidator(zipToValidate) {
+  var numbers = /^[0-9]+$/;
+  if(zipToValidate.length <= 5 && zipToValidate.match(numbers)) {
+  return true;
+} else {
+  return false;
+}
+}
+
+
+  </script>
+</body>
+</html>
+<!-- zipToValidate.match(numbers) && -->
+<!-- && zipToValidate.length <= 5
+zipToValidate.indexOf(' ') >= 0 -->
